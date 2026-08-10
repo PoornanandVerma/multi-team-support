@@ -1,0 +1,22 @@
+apiVersion: acko.ai/v1alpha1
+kind: ToolContract
+metadata:
+  id: update-policy
+  version: 0.1.0
+  title: Update Policy
+spec:
+  description: Submit an approved policy update to the internal policy service.
+  transport:
+    type: http
+    method: POST
+    endpoint: http://policy-service:8080/v1/policies/edit
+  safety:
+    sideEffect: true
+    requiresConfirmation: true
+    credentials: runtime-managed
+  inputSchema:
+    type: object
+    additionalProperties: false
+    properties: {}
+  outputSchema:
+    type: object
