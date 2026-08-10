@@ -4,7 +4,7 @@ metadata:
   id: edit-policy-routes-to-skill
 spec:
   input:
-    message: Change my policy address
+    message: Change the nominee on this policy
   expected:
     skillId: edit-policy
     status: handled

@@ -3,8 +3,8 @@ kind: Procedure
 metadata:
   id: edit-policy.edit-policy
   version: 0.1.0
-  title: Edit Policy
+  title: skill v1
 spec:
-  purpose: Coordinate a safe insurance policy edit using governed knowledge and tools.
+  purpose: Guide support advisors through safe and eligible vehicle-policy edits.
   instructions: ./instructions.md
   exit: Return a grounded response or ask for required context.

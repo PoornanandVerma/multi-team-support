@@ -1,11 +1,11 @@
 ---
 name: edit-policy
-description: Coordinate a safe insurance policy edit using governed knowledge and tools.
+description: Guide support advisors through safe and eligible vehicle-policy edits.
 ---
 
-# Edit Policy
+# skill v1
 
-Identify the requested change, retrieve the applicable policy rules, collect required facts, select only a declared tool, and require confirmation before any side effect.
+Identify the requested edit and selected policy. Load the declared policy restrictions, check eligibility and blockers, ask for any missing facts, and require confirmation before proposing a side effect.
 
 ## Boundaries
 
