@@ -1,0 +1,22 @@
+apiVersion: acko.ai/v1alpha1
+kind: ToolContract
+metadata:
+  id: v2-policy-edit-action
+  version: 0.1.0
+  title: v2_policy_edit Action
+spec:
+  description: Placeholder executable contract for v2_policy_edit.
+  transport:
+    type: http
+    method: POST
+    endpoint: https://unconfigured.invalid/v2-policy-edit-action
+  safety:
+    sideEffect: true
+    requiresConfirmation: true
+    credentials: runtime-managed
+  inputSchema:
+    type: object
+    additionalProperties: false
+    properties: {}
+  outputSchema:
+    type: object

@@ -1,0 +1,28 @@
+apiVersion: acko.ai/v1alpha1
+kind: Skill
+metadata:
+  id: v2-policy-edit
+  version: 0.1.0
+  title: v2_policy_edit
+  owners:
+    - local-authors
+spec:
+  description: Apply the governed v2_policy_edit workflow from imported instructions.
+  instructions: ./SKILL.md
+  routes:
+    intents:
+      - v2-policy-edit
+    examples:
+      - Help me with v2_policy_edit
+  procedures:
+    - id: v2-policy-edit
+      path: ./procedures/v2-policy-edit/procedure.yaml
+  knowledge:
+    - package: v2-policy-edit-rules
+      version: 0.1.0
+  tools:
+    - contract: v2-policy-edit-action
+      version: 0.1.0
+  evals:
+    - suite: v2-policy-edit-core
+      version: 0.1.0

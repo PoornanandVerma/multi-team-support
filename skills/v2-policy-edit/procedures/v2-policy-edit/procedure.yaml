@@ -1,0 +1,10 @@
+apiVersion: acko.ai/v1alpha1
+kind: Procedure
+metadata:
+  id: v2-policy-edit.v2-policy-edit
+  version: 0.1.0
+  title: v2_policy_edit
+spec:
+  purpose: Apply the governed v2_policy_edit workflow from imported instructions.
+  instructions: ./instructions.md
+  exit: Return a grounded response or ask for required context.
