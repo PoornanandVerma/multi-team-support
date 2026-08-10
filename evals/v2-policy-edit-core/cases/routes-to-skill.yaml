@@ -4,7 +4,7 @@ metadata:
   id: v2-policy-edit-routes-to-skill
 spec:
   input:
-    message: Help me with v2_policy_edit
+    message: Help me with v2_policy_edit v2 
   expected:
     skillId: v2-policy-edit
     status: handled
