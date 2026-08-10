@@ -1,0 +1,10 @@
+apiVersion: acko.ai/v1alpha1
+kind: EvalCase
+metadata:
+  id: edit-policy-routes-to-skill
+spec:
+  input:
+    message: Change my policy address
+  expected:
+    skillId: edit-policy
+    status: handled

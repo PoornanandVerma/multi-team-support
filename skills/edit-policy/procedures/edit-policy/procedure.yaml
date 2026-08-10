@@ -1,0 +1,10 @@
+apiVersion: acko.ai/v1alpha1
+kind: Procedure
+metadata:
+  id: edit-policy.edit-policy
+  version: 0.1.0
+  title: Edit Policy
+spec:
+  purpose: Coordinate a safe insurance policy edit using governed knowledge and tools.
+  instructions: ./instructions.md
+  exit: Return a grounded response or ask for required context.

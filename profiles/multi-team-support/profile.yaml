@@ -3,9 +3,11 @@ kind: AgentProfile
 metadata:
   id: multi-team-support
   version: 0.1.0
-  title: Multi-team Support
+  title: multi-team-support
 spec:
-  skills: []
+  skills:
+    - package: edit-policy
+      version: 0.1.0
   harness:
     compiler: ^1.0.0
     maxFilesPerTurn: 8
