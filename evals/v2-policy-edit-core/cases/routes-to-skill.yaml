@@ -1,0 +1,10 @@
+apiVersion: acko.ai/v1alpha1
+kind: EvalCase
+metadata:
+  id: v2-policy-edit-routes-to-skill
+spec:
+  input:
+    message: Help me with v2_policy_edit
+  expected:
+    skillId: v2-policy-edit
+    status: handled
