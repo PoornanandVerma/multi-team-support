@@ -1,0 +1,26 @@
+apiVersion: acko.ai/v1alpha1
+kind: Skill
+metadata:
+  id: edit-policy
+  version: 0.1.0
+  title: Edit Policy
+  owners:
+    - local-authors
+spec:
+  description: Coordinate a safe insurance policy edit using governed knowledge and tools.
+  instructions: ./SKILL.md
+  routes:
+    intents:
+      - edit-policy
+      - update-policy
+    examples:
+      - Change my policy address
+      - Correct my vehicle registration number
+  procedures:
+    - id: edit-policy
+      path: ./procedures/edit-policy/procedure.yaml
+  knowledge: []
+  tools: []
+  evals:
+    - suite: edit-policy-core
+      version: 0.1.0

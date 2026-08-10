@@ -1,0 +1,12 @@
+apiVersion: acko.ai/v1alpha1
+kind: EvalSuite
+metadata:
+  id: edit-policy-core
+  version: 0.1.0
+spec:
+  profile: multi-team-support
+  cases: ./cases
+  gates:
+    routingAccuracy: 0.95
+    unauthorizedToolCalls: 0
+    replayFailures: 0
