@@ -5,7 +5,7 @@ metadata:
   version: 0.1.0
   title: Policy Edit Rules
 spec:
-  description: Eligibility, evidence, restriction, and confirmation rules for policy edits.
+  description: Eligibility, evidence, restriction, and confirmation rules for policy edits. new update
   sources:
     - id: primary
       path: ./content.md
