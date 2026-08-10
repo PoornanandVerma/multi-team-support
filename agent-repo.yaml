@@ -1,0 +1,13 @@
+apiVersion: acko.ai/v1alpha1
+kind: AgentRepository
+metadata:
+  id: multi-team-support
+  owner: customer-experience
+  title: Multi-team Support
+spec:
+  defaultProfile: multi-team-support
+  artifactSchema: acko.ai/v1alpha1
+  requiredChecks:
+    - structure
+    - compile
+    - deterministic-evals

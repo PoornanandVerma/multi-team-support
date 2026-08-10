@@ -1,0 +1,15 @@
+apiVersion: acko.ai/v1alpha1
+kind: AgentProfile
+metadata:
+  id: multi-team-support
+  version: 0.1.0
+  title: Multi-team Support
+spec:
+  skills: []
+  harness:
+    compiler: ^1.0.0
+    maxFilesPerTurn: 8
+    maxContextBytes: 24576
+  modelPolicy:
+    policy: local-development
+    version: 0.1.0
