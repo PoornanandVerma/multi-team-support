@@ -3,19 +3,20 @@ kind: Skill
 metadata:
   id: edit-policy
   version: 0.1.0
-  title: Edit Policy
+  title: skill v1
   owners:
     - local-authors
 spec:
-  description: Coordinate a safe insurance policy edit using governed knowledge and tools.
+  description: Guide support advisors through safe and eligible vehicle-policy edits.
   instructions: ./SKILL.md
   routes:
     intents:
       - edit-policy
-      - update-policy
+      - policy-endorsement
     examples:
-      - Change my policy address
-      - Correct my vehicle registration number
+      - Change the nominee on this policy
+      - Correct the registration number
+      - Update the policyholder address
   procedures:
     - id: edit-policy
       path: ./procedures/edit-policy/procedure.yaml
