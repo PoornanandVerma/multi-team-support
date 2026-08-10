@@ -1,0 +1,15 @@
+apiVersion: acko.ai/v1alpha1
+kind: KnowledgePackage
+metadata:
+  id: policy-edit-rules
+  version: 0.1.0
+  title: Policy Edit Rules
+spec:
+  description: Eligibility, evidence, restriction, and confirmation rules for policy edits.
+  sources:
+    - id: primary
+      path: ./content.md
+      format: markdown
+  retrieval:
+    mode: grounded
+    citationsRequired: true
